@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  box-sizing: border-box ;
+  margin: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+
+div:has(> div){
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 800px;
+  gap: 20px;
+}
+
+.button-box{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  gap: 10px;
+}
+
+button{
+  height: 40px;
+  width: 120px;
+  font-size: 16px;
+}
+
+div:has(> img) span:nth-child(2){
+  font-weight: bolder;
+  text-transform: capitalize;
+  
+}
+
+div:has(> img){
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+span{
+  width: 100px;
+  text-align: center;
+}
