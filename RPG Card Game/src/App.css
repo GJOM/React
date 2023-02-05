@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191919;
+}
+
+.game-run{
+  display: flex;
+  gap: 300px;
+}
+
+/* ------------ PLAYER CARD */
+
+
+.player-card-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  background: #1e0a3a;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid #360f6d;
+}
+
+.player-infos, .player-health-wrapper{
+  display: flex;
+  gap: 20px;
+
+}
+
+.backpack{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button > img{
+  width: 30px;
+  height: 30px;
+}
+
+.player-image{
+  width: 150px;
+  height: 150px;
+}
+
+.player-force{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.valuables-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main-stats, .items{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.items{
+  align-items: center;
+}
+
+.inner-backpack{
+  width: 100%;
+  display: grid;
+  grid-template-columns:18% 18% 18% 18% 18% 18% ;
+  grid-template-rows: 40px 40px 40px 40px;
+
+}
+
+.slots{
+  width: 30px;
+  height: 30px;
+  background: rgb(73, 55, 88);
+  border: 1px solid rgb(103, 0, 187);
+  border-radius: 5px;
+}
+
+
+.main-stats span, .items-icon-wrapper{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 10px;
+}
+
+.items-icon-wrapper{
+  width: 120px;
+  justify-content: space-between;
+}
+
+span img{
+  width: 30px;
+  height: 30px;
+}
+
+.items-popover{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ------------ MONSTER CARD */
+
+.monster-card-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  background: #5b5b5c;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid #ececec;
+}
+
+.monster-infos{
+  display: flex;
+  gap: 20px;
+
+}
+
+.monster-image{
+  width: 150px;
+  height: 150px;
+}
+
+
+/* Sessão pós encontro */
+.game-run:has(.after-battle-box) {
+  gap: 25px;
+}
+
+.after-battle-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.5px;
+  gap: 20px;
+  height: 500px;
+  width: 250px;
+  background: #5b5b5c;
+  color: white;
+
+}
+.gold-loot{color: gold;}
+
+.after-battle-box > div:has(span){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 350px;
+  width: 100%;
+}
+
+.after-battle-box button{
+  width: 120px;
+  height: 30px;
+}
